@@ -10,8 +10,10 @@ section
 
 section#part-1 div.intro
 {
+    align-self: flex-start;
+    margin-top: 50px;
     height: calc(90vh - 100px);
-    width: 90vw;
+    width: 80vw;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
