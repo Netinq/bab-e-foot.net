@@ -12,7 +12,7 @@ section#part-1 div.intro
 {
     align-self: flex-start;
     margin-top: 5vw;
-    height: calc(90vh - 100px);
+    height: calc(85vh - 100px);
     width: 90vw;
     border-radius: 40px;
     display: flex;
