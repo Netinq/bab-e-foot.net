@@ -47,19 +47,27 @@ section#part-1 div.intro img.logo
     animation: translate-top 1s ease-out;
 }
 
-section#part-1 div.intro p
+section#part-1 div.intro div
+{
+    z-index: 100;
+    width: 75%;
+    justify-self: flex-start;
+    animation: translate-top 1s .5s ease-out, opacity .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#part-1 div.intro div p
 {
     z-index: 100;
     font-family: 'Bahnschrift';
     font-size: 1.6rem;
     text-align: center;
     color: #fff;
-    width: 75%;
-    justify-self: flex-start;
-    animation: translate-top 1s .5s ease-out, opacity .5s;
 }
 
-section#part-1 div.intro button
+section#part-1 div.intro a.btn
 {
     border: none;
     background-color: #fff;
@@ -75,6 +83,25 @@ section#part-1 div.intro button
     animation: translate-top 1s 1s ease-out, opacity 1s;
 }
 
+section#part-1 div.intro a.txt
+{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    background: rgb(71,245,97);
+    background: linear-gradient(135deg, rgba(71,245,97,1) 0%, rgba(2,230,250,1) 100%);
+}
+
 @media (min-width: 767px) {
     section#part-1 div.intro p
     {
@@ -85,10 +112,13 @@ section#part-1 div.intro button
 
 
 @media (min-width: 991px) {
-    section#part-1 div.intro p
+    section#part-1 div.intro div
     {
-        font-size: 4rem;
-        width: 50%;
+        width: 65%;
+    }
+    section#part-1 div.intro div p
+    {
+        font-size: 3rem;
         opacity: .9;
     }
     section#part-1 div.intro
@@ -97,9 +127,53 @@ section#part-1 div.intro button
         width: 100vw;
         border-radius: 0;
         padding: 50px 0;
+        margin-top: 0;
     }
     section#part-1 div.intro::before
     {
         border-radius: 0;
     }
+}
+
+section#part-2 div.flex
+{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#part-2 div.flex div.box
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#part-2 div.flex div.box h2
+{
+    font-family: 'Bahnschrift';
+    font-size: 1.6rem;
+    color: #0EE9DF;
+    margin: 0;
+    margin-bottom:15px;
+}
+section#part-2 div.flex div.box p
+{
+    font-family: 'Bahnschrift';
+    font-size: 1rem;
+    color: #4B4B4B;
+    text-align: center;
+    margin: 0;
+    margin-bottom:25px;
+}
+
+section#part-2 div.flex div.box img
+{
+    width: 50vw;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(75, 75, 75, 0.3);
 }
