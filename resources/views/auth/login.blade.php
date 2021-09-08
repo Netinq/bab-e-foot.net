@@ -4,7 +4,7 @@
 ])
 
 @section('content')
-<section>
+<section id="part-log">
     <div>
         <img src="{{ asset('img/logo-txt.png')}}" alt="Logo Bab-E-Foot">
         <form action="{{route('login')}}" method="POST">
