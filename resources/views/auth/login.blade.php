@@ -14,8 +14,7 @@
             <button type="submit">C'est parti !</button>
         </form>
         <a href="">
-            <img src="{{ asset('svg/arrow-left.svg')}}" alt="Arrow left">
-            Retour
+            Je n'ai pas de compte
         </a>
     </div>
 </section>

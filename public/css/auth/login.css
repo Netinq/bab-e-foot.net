@@ -7,6 +7,7 @@ section#part-log div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 section#part-log form {
@@ -14,8 +15,79 @@ section#part-log form {
     justify-content: center;
     flex-direction: column;
     width: 60vw;
+    background-color: #F3F3F3;
+    padding: 10vw;
+    border-radius: 40px;
+}
+
+section#part-log form input {
+    margin: 10px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    color: grey;
+    font-family: 'Bahnschrift';
+    font-size: 1rem;
+}
+
+section#part-log form button {
+    margin-top: 24px!important;
+    margin: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    background: linear-gradient(135deg, rgba(71,245,97,1) 0%, rgba(2,230,250,1) 100%);
+    font-weight: 400;
 }
 
 section#part-log > div > img {
     width: 20vw;
+    margin: 7vw;
+}
+
+section#part-log a {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+section#part-log a img {
+    margin: 10px;
+}
+
+@media (min-width: 547px) {
+    section#part-log > div > img {
+        width: 11vw;
+        margin: 20px;
+    }
+    section#part-log form {
+        width: 40vw;
+        padding: 2vw;
+    }
+    section#part-log a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 767px) {
+    section#part-log > div > img {
+        width: 7vw;
+        margin: 20px;
+    }
+    section#part-log form {
+        width: 25vw;
+        padding: 2vw;
+    }
 }

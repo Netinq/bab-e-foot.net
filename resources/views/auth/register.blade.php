@@ -4,17 +4,8 @@
 ])
 
 @section('content')
-<section>
+<section id="part-log">
     <div>
-        @if (count($errors) > 0)
-    <div class="error">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
         <img src="{{ asset('img/logo-txt.png')}}" alt="Logo Bab-E-Foot">
         <form action="{{route('register')}}" method="POST">
             @csrf
@@ -25,8 +16,7 @@
             <button type="submit">Je m'inscris !</button>
         </form>
         <a href="">
-            <img src="{{ asset('svg/arrow-left.svg')}}" alt="Arrow left">
-            Retour
+            J'ai déjà un compte
         </a>
     </div>
 </section>
