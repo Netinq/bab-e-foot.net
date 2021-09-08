@@ -168,6 +168,7 @@ section#part-2 div.flex div.box h2
     font-size: 1.6rem;
     color: #0EE9DF;
     margin: 0;
+    text-transform: uppercase;
     margin-bottom:15px;
 }
 section#part-2 div.flex div.box p
@@ -177,7 +178,7 @@ section#part-2 div.flex div.box p
     color: #4B4B4B;
     text-align: center;
     margin: 0;
-    margin-bottom:25px;
+    margin-bottom:25px!important;
 }
 
 section#part-2 div.flex div.box img
@@ -187,6 +188,22 @@ section#part-2 div.flex div.box img
     box-shadow: 0 0 10px rgba(75, 75, 75, 0.3);
 }
 
+@media (min-width: 990px) {
+    section#part-2 div.flex {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    section#part-2 div.flex div.box img {
+        width: 20vw;
+    }
+    #part-2 > div > div:nth-child(2) > img {
+        width: 15vw!important;
+    }
+    section#part-2 div.flex div.box p {
+        font-size: 1.1rem;
+        margin: 0 40px;
+    }
+}
 
 /* -------------------------------------------------
 ----------------SECTION 3---------------------------
@@ -217,7 +234,10 @@ section#part-3 div.flex div.box h2
     font-size: 1.6rem;
     color: #0EE9DF;
     margin: 0;
-    margin-bottom:15px;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-bottom: 15px;
+    display: flex;
 }
 section#part-3 div.flex div.box p
 {
@@ -231,7 +251,6 @@ section#part-3 div.flex div.box p
 
 section#part-3 div.img
 {
-    margin-top: 5vw;
     height: calc(50vh - 100px);
     width: 75%;
     border-radius: 40px;
@@ -258,6 +277,63 @@ section#part-3 div.img::before
     opacity: 60%;
 }
 
+@media (max-width: 991px) {
+    section#part-3 div.intro {
+        display: none;
+    }
+}
+
+@media (min-width: 990px) {
+    section#part-3 div.img {
+        display: none;
+    }
+    #part-3 > div > div > div:nth-child(1) {
+        display: none;
+    }
+    section#part-3 div.intro
+    {
+        align-self: flex-start;
+        height: calc(50vh - 100px);
+        flex-direction: column;
+        width: 100%;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/home/jouer.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 50px 0;
+    }
+
+    section#part-3 div.intro h2{
+        z-index: 100;
+        font-size: 3.2rem!important;
+        color: white!important;
+        text-transform: uppercase;
+    }
+    section#part-3 div.intro p{
+        z-index: 100;
+        font-size: 1.2rem!important;
+        color: white!important;
+        margin: 0 28vw!important;
+    }
+
+    section#part-3 div.intro::before
+    {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        background: linear-gradient(90deg, rgba(71,245,97,1) -35%, rgba(2,230,250,.5) 100%);
+    }
+}
+
 /* -------------------------------------------------
 ----------------SECTION 4---------------------------
 ---------------------------------------------------*/
@@ -269,62 +345,6 @@ section#part-4 div.flex
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-section#part-4 div.flex div.box
-{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 3vw 0 3vw 0;
-}
-
-section#part-4 div.flex div.box h2
-{
-    font-family: 'Bahnschrift';
-    font-size: 1.6rem;
-    color: #0EE9DF;
-    margin: 0;
-    margin-bottom:15px;
-}
-section#part-4 div.flex div.box p
-{
-    font-family: 'Bahnschrift';
-    font-size: 1rem;
-    color: #4B4B4B;
-    text-align: center;
-    margin: 0;
-    margin-bottom:25px;
-}
-
-section#part-4 div.img
-{
-    height: calc(30vh - 100px);
-    width: 100%;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(../img/home/jouer.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-section#part-4 div.img::before
-{
-    content: ' ';
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-    background: linear-gradient(150deg, rgba(71,245,97,1) 10%, rgba(2,230,250,.5) 100%);
-    opacity: 60%;
 }
 
 section#part-4 div.intro
@@ -361,6 +381,7 @@ section#part-4 h2 {
     font-size: 1.6rem;
     color: #FFFFFF;
     margin-left: 10%;
+    text-transform: uppercase;
     z-index: 100;
 }
 
@@ -386,4 +407,30 @@ section#part-4 div.intro a.txt
 section#part-4 div.intro div.btn {
     z-index: 100;
     margin-right: 10%;
+}
+
+@media (max-width: 991px) {
+    section#part-4 div.displaytext p {
+        display: none;
+    }
+}
+
+@media (min-width: 990px) {
+    section#part-4 h2 {
+        text-transform: uppercase;
+        font-size: 2.6rem;
+    }
+    section#part-4 div.intro a.txt {
+        color: rgba(2,230,250,1);
+        font-weight: 100!important;
+        background: white;
+    }
+    section#part-4 div.displaytext {
+        color: white;
+        z-index: 100;
+        margin: 0 10vw;
+    }
+    section#part-4 div.displaytext p {
+        font-size: 1.1rem;
+    }
 }
