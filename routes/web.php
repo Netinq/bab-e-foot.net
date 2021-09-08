@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ProfilController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
@@ -18,15 +19,5 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 Auth::routes();
 
 Route::get('/', [MainController::class, 'home'])->name('home');
-Route::get('qr/{uuid}', function($uuid)
-{
-    return $uuid;
-})->name('qr');
-
-Route::get('qr-g/{uuid}', function ($uuid) {
-
-    $qr = QrCode::size(500)
-        ->generate(route('qr', $uuid));
-
-    return view('qrCode', compact('qr'));
-});
+Route::get('/profil', [ProfilController::class, 'index'])->name('profil.index');
+Route::get('qr/{uuid}', function ($uuid) {return $uuid;})->name('qr');
