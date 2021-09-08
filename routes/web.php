@@ -26,8 +26,7 @@ Route::get('qr/{uuid}', function($uuid)
 Route::get('qr-g/{uuid}', function ($uuid) {
 
     $qr = QrCode::size(500)
-        ->format('png')
-        ->generate(route('qr', $uuid), public_path('images/qrcode.png'));
+        ->generate(route('qr', $uuid));
 
     return view('qrCode', compact('qr'));
 });
