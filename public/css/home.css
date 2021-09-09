@@ -142,6 +142,10 @@ section#part-1 div.intro a.txt
 ----------------SECTION 2---------------------------
 ---------------------------------------------------*/
 
+section#part-2 {
+    overflow: hidden;
+}
+
 section#part-2 div.flex
 {
     width: 90vw;
@@ -159,6 +163,7 @@ section#part-2 div.flex div.box
     justify-content: flex-start;
     align-items: center;
     margin: 3vw 0 18vw 0;
+    position: relative;
 }
 
 section#part-2 div.flex div.box h2
@@ -187,6 +192,29 @@ section#part-2 div.flex div.box img
     box-shadow: 0 0 10px rgba(75, 75, 75, 0.3);
 }
 
+section#part-2 .gradient-1 {
+    background: linear-gradient(131deg, rgba(71,245,97,1) 0%, rgba(2,230,250,.5) 100%);
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    border-radius: 21px;
+    bottom: -4vh;
+    z-index: -1;
+    right: -12vh;
+}
+
+
+section#part-2 .gradient-2 {
+    background: linear-gradient(131deg, rgba(71,245,97,1) 0%, rgba(2,230,250,.5) 100%);
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    border-radius: 21px;
+    bottom: 8vh;
+    z-index: -1;
+    left: -15vh;
+}
+
 @media (min-width: 990px) {
     section#part-2 div.flex {
         flex-direction: row;
@@ -201,6 +229,26 @@ section#part-2 div.flex div.box img
     section#part-2 div.flex div.box p {
         font-size: 1.1rem;
         margin: 0 40px;
+    }
+    section#part-2 .gradient-1 {
+        background: linear-gradient(131deg, rgba(71,245,97,1) 0%, rgba(2,230,250,.5) 100%);
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        border-radius: 21px;
+        bottom: -4vh;
+        z-index: -1;
+        right: 12vh;
+    } 
+    section#part-2 .gradient-2 {
+        background: linear-gradient(131deg, rgba(71,245,97,1) 0%, rgba(2,230,250,.5) 100%);
+        width: 40%;
+        height: 50%;
+        position: absolute;
+        border-radius: 21px;
+        bottom: -5vh;
+        z-index: -1;
+        left: 12vh;
     }
 }
 

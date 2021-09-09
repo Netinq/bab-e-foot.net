@@ -24,17 +24,45 @@
     </div>
     <div class="stats">
         <div class="stats-1">
-            
+            <p><span>10</span>buts</p>
+            <p>Marqués au total</p>
         </div>
         <div class="stats-2">
-            
+            <p><span>35</span>min</p>
+            <p>De jeu</p>
         </div>
         <div class="stats-3">
-            
+            <p><span>2</span>lieux</p>
+            <p>Partenaires visités</p>
         </div>
         <div class="stats-4">
-            
+            <p><span>22</span>parties</p>
+            <p>De babyfoot jouées</p>
         </div>
+    </div>
+    <div class="history">
+        <div>
+            <img src="{{ asset('svg/history.svg')}}" alt="History">
+            <h2>Historique</h2>
+        </div>
+        <diV class="results-history-v">
+            <div>
+                <h2>Victoire</h2>
+                <p>Vous avez affronté <span>Quentin</span></p>
+            </div>
+            <div class="circle-v">
+                <p><span>01</span>buts</p>
+            </div>
+        </diV>
+        <diV class="results-history-d">
+            <div>
+                <h2>Défaite</h2>
+                <p>Vous avez affronté <span>Jules</span></p>
+            </div>
+            <div class="circle-d">
+                <p><span>01</span>buts</p>
+            </div>
+        </diV>
     </div>
 </section>
 @endsection
