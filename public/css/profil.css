@@ -77,6 +77,15 @@ section#part-profil svg {
 .skillbar {
     height: 2vh;
     border-radius: 40px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+#skill {
+    width: 0;
+    position: absolute;
+    height: 100%;
+    border-radius: 40px;
     background: linear-gradient(90deg, rgba(71,245,97,1) -35%, rgba(2,230,250,.5) 100%);
 }
 
