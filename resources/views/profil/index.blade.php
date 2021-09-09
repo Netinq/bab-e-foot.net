@@ -28,7 +28,7 @@
             <p>Marqués au total</p>
         </div>
         <div class="stats-2">
-            <p><span>{{ $stat->playtime / 60 }}</span>min</p>
+            <p><span>{{ round($stat->playtime / 60, 0) }}</span>min</p>
             <p>De jeu</p>
         </div>
         <div class="stats-3">
