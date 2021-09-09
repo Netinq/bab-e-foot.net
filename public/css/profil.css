@@ -1,0 +1,176 @@
+/* -------------------------------------------------
+------------------Profil----------------------------
+---------------------------------------------------*/
+
+section#part-profil {
+    display: flex;
+    flex-direction: column;
+}
+
+section#part-profil img {
+    width: 17vw;
+    margin: 10px;
+}
+
+section#part-profil .qrcode {
+    margin: 10px;
+    height: 22vh;
+    width: 80%;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(71,245,97,1) 0%, rgba(2,230,250,.5) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#part-profil .qrcode p {
+    font-family: 'Bahnschrift';
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0!important;
+}
+
+section#part-profil svg {
+    width: 22vw;
+}
+
+.modifier {
+    position: absolute;
+    border: none;
+    right: 2vw;
+    padding: 8px;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #DFDFDF;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(75, 75, 75, 0.3);
+}
+
+.backhome {
+    position: absolute;
+    border: none;
+    bottom: 5vh;
+    padding: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #DFDFDF;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(75, 75, 75, 0.3);
+}
+
+#part-profil > div.qrcode > a > img {
+    width: 4vw;
+    margin: 0!important;
+}
+
+.skillbar {
+    height: 2vh;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgba(71,245,97,1) -35%, rgba(2,230,250,.5) 100%);
+}
+
+.level {
+    width: calc(80% + 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #47F561;
+    font-family: 'Bahnschrift';
+    font-size: 1.6rem;
+}
+
+.level h2 {
+    color: #4B4B4B;
+    margin: 0!important;
+    font-size: initial;
+    font-size: 22px;
+}
+
+#part-profil > div.level > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#part-profil > div.level > p {
+    margin: 12px 0 5px 0!important;
+    font-size: 20px;
+}
+
+#part-profil > div.level > div:nth-child(1) > img {
+    width: 22px;
+}
+
+.exit {
+    border: none;
+    background: #F3F3F3;
+    padding: 8px 15px;
+    border-radius: 40px;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8rem;
+    align-items: center;
+    margin: 3vw;
+}
+
+.exit p {
+    color: #4B4B4B;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.exit img {
+    width: 12px!important;
+    margin: 0!important;
+}
+
+.stats {
+    width: calc(80% + 10px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stats-1, .stats-2, .stats-3, .stats-4 {
+    border-radius: 21px;
+    height: 120px;
+    width: calc(50% - 10px);
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+}
+
+.stats-1 {
+    background-color: #47F561;
+}
+
+.stats-2 {
+    background-color: #25EEAC;
+}
+
+.stats-3 {
+    background-color: #12EAD6;
+}
+
+.stats-4 {
+    background-color: #00E6FE;
+}
+
+@media (min-width: 990px) {
+    section#part-profil img {
+        width: 10vw;
+    }
+}
+
