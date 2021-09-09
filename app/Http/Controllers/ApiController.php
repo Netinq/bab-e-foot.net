@@ -49,7 +49,7 @@ class ApiController extends Controller
         $stat->player_id = $player->id;
         $stat->playtime = $stat->playtime == null ? $data['playtime'] : $stat->playtime + $data['playtime'];
         $stat->goals = $stat->goals == null ? $data[$player_string]['total_goals']  : $stat->goals + $data[$player_string]['total_goals'];
-        $stat->points = $stat->points == null ? ($data[$player_string]['total_goals']*2) + ($data['playtime']*1.5) : $stat->points + ($data[$player_string]['total_goals'] * 2) + ($data['playtime'] * 1.5);
+        $stat->points = $stat->points == null ? ($data[$player_string]['total_goals']*2) + ($data['playtime']*0.25) : $stat->points + ($data[$player_string]['total_goals'] * 2) + ($data['playtime'] * 1.5);
         $stat->party_played = $stat->party_played == null ? 1 : $stat->party_played + 1;
         if (Game::where($player_string, $player->id)
             ->orWhere('player_2', $player->id)
