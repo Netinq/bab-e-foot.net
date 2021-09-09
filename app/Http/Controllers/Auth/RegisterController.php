@@ -69,13 +69,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+        $user = new User();
+        $user->username = $data['username'];
+        $user->email = $data['email'];
+        $user->avatar_id = 0;
+        $user->password = Hash::make($data['password']);
+        $user->save();
+
         $stat = new Stat();
+        $stat->player_id = $user->id;
         $stat->save();
-        return User::create([
-            'username' => $data['username'],
-            'email' => $data['email'],
-            'avatar_id' => 0,
-            'password' => Hash::make($data['password']),
-        ]);
+
+        return redirect()->route('profil.index');
     }
 }
