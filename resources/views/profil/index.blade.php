@@ -11,7 +11,7 @@
         <p>{{ $user->username }}</p>
         <a href="" class="modifier"><img src="{{ asset('svg/pen.svg')}}" alt="Modifier"></a>
     </div>
-    <a href="" class="exit"><img src="{{ asset('svg/exit.svg')}}" alt="Exit">
+    <a href="{{route('logout')}}" class="exit"><img src="{{ asset('svg/exit.svg')}}" alt="Exit">
         <p>Déconnexion</p>
     </a>
     <div class="level">

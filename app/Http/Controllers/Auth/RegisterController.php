@@ -81,6 +81,6 @@ class RegisterController extends Controller
         $stat->player_id = $user->id;
         $stat->save();
 
-        return redirect()->route('profil.index');
+        return $user;
     }
 }
