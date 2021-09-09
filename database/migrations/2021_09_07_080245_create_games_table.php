@@ -20,6 +20,7 @@ class CreateGamesTable extends Migration
             $table->uuid('player_3')->nullable();
             $table->uuid('player_4')->nullable();
             $table->bigInteger('place_id')->unsigned();
+            $table->bigInteger('playtime')->unsigned();
             $table->timestamps();
 
             $table->foreign('player_1')->references('id')->on('users')->onDelete('cascade');

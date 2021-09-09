@@ -9,6 +9,8 @@ class Stat extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'player_id';
+
     protected $fillable = [
         'playtime',
         'points',
