@@ -8,7 +8,7 @@
     <img src="{{ asset('img/logo-txt.png')}}" alt="Logo Bab-E-Foot">
     <div class="qrcode">
         {!! $qr !!}
-        <p>thibault.barral</p>
+        <p>{{ $user->username }}</p>
         <a href="" class="modifier"><img src="{{ asset('svg/pen.svg')}}" alt="Modifier"></a>
     </div>
     <a href="" class="exit"><img src="{{ asset('svg/exit.svg')}}" alt="Exit">
@@ -19,24 +19,24 @@
             <img src="{{ asset('svg/stats.svg')}}" alt="Stats">
             <h2>Mes Statistiques</h2>
         </div>
-        <p>Niveau 25</p>    
+        <p>Niveau 0</p>
         <div class="skillbar"></div>
     </div>
     <div class="stats">
         <div class="stats-1">
-            <p><span>10</span>buts</p>
+            <p><span>{{ $stat->goals }}</span>buts</p>
             <p>Marqués au total</p>
         </div>
         <div class="stats-2">
-            <p><span>35</span>min</p>
+            <p><span>{{ $stat->playtime }}</span>min</p>
             <p>De jeu</p>
         </div>
         <div class="stats-3">
-            <p><span>2</span>lieux</p>
+            <p><span>{{ $stat->places_visited }}</span>lieux</p>
             <p>Partenaires visités</p>
         </div>
         <div class="stats-4">
-            <p><span>22</span>parties</p>
+            <p><span>{{ $stat->party_played }}</span>parties</p>
             <p>De babyfoot jouées</p>
         </div>
     </div>
