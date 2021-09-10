@@ -32,7 +32,7 @@ class ApiController extends Controller
         }
         foreach ($data['player_2']['goals'] as $key) {
             $goal = new Goal();
-            $goal->player_id = $player1->id;
+            $goal->player_id = $player2->id;
             $goal->game_id = $game->id;
             $goal->goat_at = $key;
             $goal->save();
