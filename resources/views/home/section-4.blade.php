@@ -1,5 +1,5 @@
-<section id="part-4">
-    <div class="flex">
+<section id="part-4" class="section">
+    <div class="flex hide">
         <div class="intro">
             <h2>Tournois</h2>
             <div class="displaytext">
