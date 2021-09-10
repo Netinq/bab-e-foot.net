@@ -70,8 +70,8 @@
         const skill = document.getElementById('skill');
         const points = {!! json_encode($stat->points) !!};
         let level = 1;
-        let exp = 9;
-        for (let e = 9; 1.5**e < points; e++)
+        let exp = 14;
+        for (let e = 14; 1.5**e < points; e++)
         {
             level++;
             exp += 1;
