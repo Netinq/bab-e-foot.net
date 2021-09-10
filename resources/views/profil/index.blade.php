@@ -9,7 +9,7 @@
     <div class="qrcode">
         {!! $qr !!}
         <p>{{ $user->username }}</p>
-        <a href="" class="modifier"><img src="{{ asset('svg/pen.svg')}}" alt="Modifier"></a>
+        {{-- <a href="" class="modifier"><img src="{{ asset('svg/pen.svg')}}" alt="Modifier"></a> --}}
     </div>
     <form action="{{route('logout')}}" method="post">
         @csrf
